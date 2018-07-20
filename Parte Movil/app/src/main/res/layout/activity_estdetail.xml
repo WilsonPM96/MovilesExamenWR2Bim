@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.wilson.examenMovilesEstumat2Bim.EstDetailActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_detalle_est"
+        android:layout_width="match_parent"
+        android:layout_height="189dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/txtView_nombre_detalle"
+            android:layout_width="192dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btn_nueva_materia"
+            android:layout_width="106dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/textView_graduado_est_detalle"
+            android:layout_marginEnd="15dp"
+            android:text="Nueva Materia" />
+
+        <TextView
+            android:id="@+id/textView_apellidos_est_detalle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="56dp"
+            android:text="Apellidos"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView_graduado_est_detalle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView_numerohoras_mat_detalle"
+            android:layout_centerHorizontal="true"
+            android:text="Graduado"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView_fecha_est_detalle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView_graduado_est_detalle"
+            android:layout_alignTop="@+id/textView_apellidos_est_detalle"
+            android:text="Fecha Nacimiento"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView_numerohoras_mat_detalle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView_apellidos_est_detalle"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/textView_apellidos_est_detalle"
+            android:layout_marginBottom="47dp"
+            android:text="Semestre"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtView_apellidos_detalle"
+            android:layout_width="73dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView_apellidos_est_detalle"
+            android:layout_alignStart="@+id/textView_apellidos_est_detalle"
+            android:layout_centerVertical="true"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/txtView_fecha_detalle"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView_fecha_est_detalle"
+            android:layout_centerVertical="true"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/txtView_semestre_detalle"
+            android:layout_width="72dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView_apellidos_est_detalle"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/textView_apellidos_est_detalle"
+            android:layout_marginBottom="18dp"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/txtView_graduado_detalle"
+            android:layout_width="118dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView_graduado_est_detalle"
+            android:layout_alignStart="@+id/textView_graduado_est_detalle"
+            android:layout_alignTop="@+id/txtView_semestre_detalle"
+            android:textAlignment="center" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="?android:attr/listDivider" />
+
+        <Button
+            android:id="@+id/btn_mapa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="Mapa" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView_detalle_est"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.969" />
+
+</android.support.constraint.ConstraintLayout>

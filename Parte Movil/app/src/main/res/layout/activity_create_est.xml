@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.wilson.examenMovilesEstumat2Bim.CreateEstActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/edi"
+        android:layout_width="388dp"
+        android:layout_height="384dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.153"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.505">
+
+        <TextView
+            android:id="@+id/txtView_nombre_est"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="47dp"
+            android:text="Nombre"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/editText_nombre_est"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/txtView_nombre_est"
+            android:layout_alignLeft="@+id/editText_apellido_est"
+            android:layout_alignStart="@+id/editText_apellido_est"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editText_apellido_est"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editText_fecha_est"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/editText_fecha_est"
+            android:layout_marginTop="96dp"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editText_fecha_est"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/txtView_nacimiento_est"
+            android:layout_marginEnd="24dp"
+            android:ems="10"
+            android:inputType="date"
+            android:layout_marginRight="24dp"
+            android:layout_alignParentRight="true" />
+
+        <EditText
+            android:id="@+id/editText_semestre_est"
+            android:layout_width="217dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/editText_nombre_est"
+            android:layout_alignTop="@+id/txtView_semestre_est"
+            android:inputType="number" />
+            "10"
+            android:inputType="numberDecimal"
+            android:layout_alignLeft="@+id/editText
+                       android:layout_alignParentBottom="true"
+
+            ndroid:layout_alignStart="@+id/edit
+            t"
+            a
+            _marginBottom="124dp"
+            />
+
+        <TextView
+            android:id="@+id/txtView_apellido_est"
+            android:layout_width="89dp"
+            android:layout_height="42dp"
+            android:layout_alignLeft="@+id/txtView_nombre_est"
+            android:layout_alignStart="@+id/txtView_nombre_est"
+            android:layout_alignTop="@+id/editText_apellido_est"
+            android:text="Apellido"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/txtView_nacimiento_est"
+            android:layout_width="127dp"
+            android:layout_height="53dp"
+            android:layout_alignLeft="@+id/txtView_nombre_est"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/txtView_nombre_est"
+            android:layout_marginTop="152dp"
+            android:text="Fecha Nacimiento"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/txtView_semestre_est"
+            android:layout_width="116dp"
+            android:layout_height="39dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/txtView_nombre_est"
+            android:layout_marginBottom="127dp"
+            android:text="Semestre"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/txtView_graduado_est"
+            android:layout_width="114dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtView_nombre_est"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/txtView_nombre_est"
+            android:layout_marginBottom="78dp"
+            android:text="Graduado"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/btn_guardar_est"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="19dp"
+            android:layout_marginEnd="137dp"
+            android:layout_marginRight="137dp"
+            android:text="Registrar" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup_yes_no"
+            android:layout_width="215dp"
+            android:layout_height="32dp"
+            android:layout_alignStart="@+id/editText_nombre_est"
+            android:layout_alignTop="@+id/txtView_graduado_est"
+            android:layout_marginTop="-3dp"
+            android:orientation="horizontal"
+            android:layout_alignLeft="@+id/editText_nombre_est">
+
+            <RadioButton
+                android:id="@+id/radio_yes_est"
+                android:layout_width="78dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Sí" />
+
+            <RadioButton
+                android:id="@+id/radio_no_est"
+                android:layout_width="84dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="No" />
+        </RadioGroup>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/Estudiante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="Estudiante"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.558"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.002" />
+
+</android.support.constraint.ConstraintLayout>

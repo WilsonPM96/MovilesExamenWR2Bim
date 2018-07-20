@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+
+        <TextView
+            android:id="@+id/txtNombreEstudiante"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txtApellidoEstudiante"
+            android:layout_width="210dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/txtNombreEstudiante"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txtFechaNacimientoEstudiante"
+            android:layout_width="210dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/txtApellidoEstudiante"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnDetallesEstudiant"
+            android:layout_width="183dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/txtNombreEstudiante"
+            android:layout_toEndOf="@+id/txtApellidoEstudiante"
+            android:background="@color/colorPrimary"
+            android:text="@string/detalles"
+            android:textColor="@android:color/background_light" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:background="@color/colorPrimary" />
+
+</RelativeLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.wilson.estudiantemateria">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+<<<<<<< HEAD
+<<<<<<< HEAD
+        <activity android:name="com.example.wilson.estudiantemateria.MainActivity">
+=======
+        <activity android:name=".MainActivity">
+>>>>>>> f9f3796b8fac581fa92c79010632385b7fd8bc81
+=======
+        <activity android:name=".MainActivity">
+>>>>>>> master
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+<<<<<<< HEAD
+<<<<<<< HEAD
+        <activity android:name="com.example.wilson.estudiantemateria.RegistrarUsuarios" />
+        <activity android:name="com.example.wilson.estudiantemateria.EstudianteActivity" />
+        <activity android:name="com.example.wilson.estudiantemateria.ListarEstudiantesActivity" />
+        <activity android:name="com.example.wilson.estudiantemateria.DetallesEstudianteActivity" />
+        <activity android:name="com.example.wilson.estudiantemateria.DeliveryActivity" />
+        <activity android:name="com.example.wilson.estudiantemateria.MateriaActivity" />
+        <activity android:name="com.example.wilson.estudiantemateria.DetallesMateriaActivity" />
+        <activity android:name="com.example.wilson.estudiantemateria.BuscarEstudianteActivity" />
+        <activity android:name="com.example.wilson.estudiantemateria.ListarEstudianteClienteActivity" />
+        <activity android:name="com.example.wilson.estudiantemateria.DetallesEstudianteClienteActivity" />
+        <activity android:name="com.example.wilson.estudiantemateria.DetallesMateriaClienteActivity" />
+        <activity android:name="com.example.wilson.estudiantemateria.CompradorActivity" />
+        <activity android:name="com.example.wilson.estudiantemateria.DetalleOrdenesActivity"></activity>
+=======
+=======
+>>>>>>> master
+        <activity android:name=".CreateEstActivity" />
+        <activity android:name=".CreateMatActivity" />
+        <activity android:name=".VendedorMainActivity" />
+        <activity android:name=".EstListActivity" />
+        <activity android:name=".EstDetailActivity" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.wilson.examenMovilesEstumat2Bim.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".GoogleMapsActivity"
+            android:label="@string/title_activity_google_maps"></activity>
+<<<<<<< HEAD
+>>>>>>> f9f3796b8fac581fa92c79010632385b7fd8bc81
+=======
+>>>>>>> master
+    </application>
+
+</manifest>
