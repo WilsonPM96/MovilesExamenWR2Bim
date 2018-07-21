@@ -21,11 +21,11 @@ class CompradorActivity : AppCompatActivity() {
 
 
         btnEnviarDatosComprador.setOnClickListener { v: View? ->
-            crearOreden()
+            crearOrden()
         }
     }
 
-    fun crearOreden(){
+    fun crearOrden(){
         var cedula = txtCedulaComprador.text.toString().toInt()
         var sector = txtSector.text.toString()
         var idMateria = idMaterias.toInt()
@@ -38,16 +38,15 @@ class CompradorActivity : AppCompatActivity() {
                 .setDuration(10000)
                 .enableSwipeToDismiss()
                 .setOnClickListener(View.OnClickListener {
-                    irAbuscarEntrenador()
+                    irAPaginaPrincipal()
                 }).show()
 
 
     }
 
-    fun irAbuscarEntrenador(){
-        txtCedulaComprador.setText("")
-        txtSector.setText("")
-        val intent = Intent(this,BuscarEstudianteActivity::class.java)
+    fun irAPaginaPrincipal(){
+        val intent = Intent(this,RegistrarUsuarios::class.java)
+        intent.putExtra("valorRol", "CLIENTE")
         startActivity(intent)
     }
 }

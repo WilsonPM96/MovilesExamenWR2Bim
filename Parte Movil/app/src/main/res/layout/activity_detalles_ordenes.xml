@@ -26,7 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="76dp"
         android:layout_marginTop="88dp"
-        android:text="Cedula"
+        android:text="Cédula"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -76,7 +76,7 @@
         app:layout_constraintTop_toBottomOf="@+id/txtShowCedula" />
 
     <TextView
-        android:id="@+id/txtShowIdPokemon"
+        android:id="@+id/txtShowIdMateria"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="76dp"
@@ -103,7 +103,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
     <EditText
-        android:id="@+id/txtPrecioPokemon"
+        android:id="@+id/txtPrecioMateria"
         android:layout_width="251dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -122,17 +122,31 @@
         android:id="@+id/btnGuardarDatosOrden"
         android:layout_width="159dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:background="@color/colorPrimary"
         android:text="ENVIAR ORDEN"
         android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_mapa"
+        app:layout_constraintEnd_toStartOf="@+id/btn_mapa"
+        app:layout_constraintHorizontal_bias="0.621"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_mapa"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btn_mapa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorPrimary"
+        android:text="Ver Ubicacion"
+        android:textColor="@android:color/background_light"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtPrecioPokemon"
-        app:layout_constraintVertical_bias="0.68" />
+        app:layout_constraintTop_toBottomOf="@+id/txtPrecioMateria"
+        app:layout_constraintVertical_bias="0.347" />
 </android.support.constraint.ConstraintLayout>

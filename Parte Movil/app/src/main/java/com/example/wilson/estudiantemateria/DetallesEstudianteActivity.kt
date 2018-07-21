@@ -50,6 +50,8 @@ class DetallesEstudianteActivity : AppCompatActivity() {
         btnNuevaMateria.setOnClickListener { v: View? ->
             irActividdadCrearMateria()
         }
+
+
     }
 
     fun irActividdadCrearMateria(){
@@ -58,6 +60,7 @@ class DetallesEstudianteActivity : AppCompatActivity() {
         intent.putExtra("estudianteId", estudiante?.id!!)
         startActivity(intent)
     }
+
 
     override fun onContextItemSelected(item: MenuItem): Boolean {
         var position = adaptador.getPosition()

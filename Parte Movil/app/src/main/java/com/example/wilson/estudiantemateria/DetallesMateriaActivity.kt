@@ -18,7 +18,7 @@ class DetallesMateriaActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detalles_materia)
 
-        materia = intent.getParcelableExtra("detallesPokemon")
+        materia = intent.getParcelableExtra("detallesMateria")
 
 
         txtShowNombreMateria.text = materia?.nombre.toString()

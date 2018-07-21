@@ -4,11 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-<<<<<<< HEAD:ParteMovilWR/app/src/main/res/layout/activity_listar_estudiantes_cliente.xml
     tools:context=".ListarEstudianteClienteActivity">
-=======
-    tools:context="com.example.wilson.examenMovilesEstumat2Bim.EstListActivity">
->>>>>>> master:ParteMovilWR/app/src/main/res/layout/activity_estlist.xml
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyclerView_listarEstudiante_Clientes"

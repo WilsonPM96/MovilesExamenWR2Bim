@@ -54,8 +54,6 @@ class BaseDatosMateria{
                 val fechaCreacion = it["fechaCreacion"] as String
                 val numeroHorasPorSemana = it["numeroHorasPorSemana"] as Int
                 val imagenMateria = it["imagenMateria"] as String
-                //val latitud = it["latitud"] as Double
-               // val longitud = it["longitud"] as Double
                 val materias = Materia(id,nombre,codigo,descripcion,activo,fechaCreacion,numeroHorasPorSemana,imagenMateria,estudianteId,0,0)
                 materia.add(materias)
             }

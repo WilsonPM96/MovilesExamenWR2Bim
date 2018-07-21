@@ -56,12 +56,13 @@ class EstudianteActivity : AppCompatActivity() {
             var estudiante = Estudiante(estudiante?.id!!, nombres, apellidos, fecha, semestreActual, graduado,0,0)
             BaseDatosEstudiante.actualizarEstudiante(estudiante)
         }
-        irListarEstudianteActivity()
+        iraActividadEstudiante()
 
     }
 
-    fun irListarEstudianteActivity(){
-        val intent = Intent(this, ListarEstudiantesActivity::class.java)
+    fun iraActividadEstudiante(){
+        val intent = Intent(this, RegistrarUsuarios::class.java)
+        intent.putExtra("valorRol","VENDEDOR")
         startActivity(intent)
     }
 }

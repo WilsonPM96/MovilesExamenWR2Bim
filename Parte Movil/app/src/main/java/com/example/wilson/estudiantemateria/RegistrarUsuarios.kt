@@ -47,6 +47,10 @@ class RegistrarUsuarios : AppCompatActivity() {
             irBuscarEstudianteActivity()
         }
 
+        btn_salirsistema.setOnClickListener { v: View? ->
+            irMainActivity()
+        }
+
 
     }
 
@@ -71,6 +75,11 @@ class RegistrarUsuarios : AppCompatActivity() {
         val intent = Intent(this,BuscarEstudianteActivity::class.java)
         startActivity(intent)
 
+    }
+
+    fun irMainActivity(){
+        val intent = Intent(this,MainActivity::class.java)
+        startActivity(intent)
     }
 
 

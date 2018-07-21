@@ -36,9 +36,6 @@ class EstudianteClienteAdapter(private val estudianteList: List<Estudiante>) :  
         }
 
         override fun onCreateContextMenu(menu: ContextMenu?, v: View?, menuInfo: ContextMenu.ContextMenuInfo?) {
-            /*menu?.add(Menu.NONE, R.id.item_menu_compartir, Menu.NONE, R.string.menu_share)*/
-            //menu?.add(Menu.NONE, R.id.item_menu_editar, Menu.NONE, "Editar")
-            //menu?.add(Menu.NONE, R.id.item_menu_eliminar, Menu.NONE, "Eliminar")
         }
     }
 
